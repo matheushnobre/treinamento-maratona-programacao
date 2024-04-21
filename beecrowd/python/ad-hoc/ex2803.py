@@ -1,0 +1,1 @@
+print('Regiao Norte') if input() in ['roraima', 'acre', 'amapa', 'amazonas', 'para', 'rondonia', 'tocantins'] else print('Outra regiao')

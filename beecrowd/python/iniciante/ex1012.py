@@ -1,0 +1,6 @@
+a, b, c = map(float, input().split())
+print('TRIANGULO: {:.3f}'.format(round(a*c/2, 3)))
+print('CIRCULO: {:.3f}'.format(round(3.14159 * c**2, 3)))
+print('TRAPEZIO: {:.3f}'.format(round((a+b)*c/2, 3)))
+print('QUADRADO: {:.3f}'.format(round(b**2, 3)))
+print('RETANGULO: {:.3f}'.format(round(a*b, 3)))

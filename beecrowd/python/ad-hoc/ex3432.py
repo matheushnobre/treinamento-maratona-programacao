@@ -1,0 +1,1 @@
+print('F') if '9' in input().split() else print('S')
