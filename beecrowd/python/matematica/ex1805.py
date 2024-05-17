@@ -1,3 +1,4 @@
 a, b = map(int, input().split())
-r = ((a+b) * (b-a + 1)) // 2
-print(r)
+sa = ((a-1) * (a)) // 2
+sb = (b * (b+1)) // 2 - sa
+print(sb)
