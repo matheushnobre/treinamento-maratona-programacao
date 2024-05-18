@@ -1,21 +1,16 @@
-def fat(n):
-    f = 1
-    for i in range(n):
-        f *= i+1
-    return f
+from math import factorial
 
 while True:
     try:
-        p = input()
-        f = fat(len(p))
+        palavra, letras = input(), []
+        repetidas = 1
+
+        for l in palavra:
+            if l not in letras:
+                repetidas *= factorial(palavra.count(l))
+                letras.append(l)
         
-        d = 1
-        v = []
-        for l in p:
-            if l not in v:
-                d *= fat(p.count(l))
-                v.append(l)
-        print((f//d) % 1000000007)
-            
+        perm = factorial(len(palavra)) // repetidas
+        print(perm  % 1000000007)
     except EOFError:
         break
