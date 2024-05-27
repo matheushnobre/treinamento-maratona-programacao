@@ -1,0 +1,1 @@
+print(f'{sum(sorted([float(n) for n in input().split()])[1:4]):.1f}')
